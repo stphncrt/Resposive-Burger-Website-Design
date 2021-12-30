@@ -95,8 +95,7 @@ section {
 .header .logo {
   position: absolute;
   top: 3rem;
-  left: 48.5%;
-  transform: translateX(-50%);
+  left: 44%;
 }
 .header .logo img {
   width: 15rem;
@@ -273,6 +272,36 @@ section {
 .about .content h3 i {
   padding-right: 0.5rem;
   color: #eacf4f;
+}
+
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.reviews .box-container .box {
+  text-align: center;
+}
+.reviews .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.reviews .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.reviews .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #fff;
+  padding: 1rem 0;
+}
+.reviews .box-container .box i {
+  color: #eacf4f;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {

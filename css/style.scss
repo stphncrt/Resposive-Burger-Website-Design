@@ -123,8 +123,8 @@ section {
     .logo {
         position: absolute;
         top: 3rem;
-        left: 48.5%;
-        transform: translateX(-50%);
+        left: 44%;
+        // transform: translateX(-48%);
         img {
             width: 15rem;
         }
@@ -288,6 +288,34 @@ section {
 }
 
 //=============About section Ends =================
+//============Reviews section starts =================
+.reviews {
+    .box-container {
+        @include grid(31rem);
+        .box {
+            text-align: center;
+            img {
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                @include title-text(2rem);
+            }
+            p {
+                @include grap-text(1.5rem);
+                padding: 1rem 0;
+            }
+            i {
+                color: $yellow;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+//============Review section ends =================
 // ================media queries================
 @media (max-width: 1200px) {
     .header {
