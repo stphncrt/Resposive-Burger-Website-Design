@@ -316,6 +316,74 @@ section {
 }
 
 //============Review section ends =================
+//==============Contact section starts =================
+.contact {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        .map {
+            flex: 1 1 40rem;
+        }
+        .form {
+            flex: 1 1 40rem;
+            .icons-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin-bottom: 3rem;
+                .icons {
+                    flex: 1 1 17rem;
+                    text-align: center;
+                    i {
+                        height: 6rem;
+                        width: 6rem;
+                        line-height: 6rem;
+                        background: $yellow;
+                        color: $black;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                        border-radius: 50%;
+                    }
+                    h3 {
+                        padding: 1rem 0;
+                        @include title-text(2rem);
+                    }
+                    p {
+                        @include grap-text(1.5rem);
+                    }
+                }
+            }
+            form {
+                text-align: center;
+                .box {
+                    padding: 1.2rem 1.4rem;
+                    font-size: 1.6rem;
+                    color: $white;
+                    background: none;
+                    border: $border;
+                    text-transform: none;
+                    width: 100%;
+                    &:focus {
+                        border-color: $yellow;
+                    }
+                }
+                textarea {
+                    height: 15rem;
+                    background: none;
+                    width: 100%;
+                    padding: 1.2rem 1.4rem;
+                    font-size: 1.6rem;
+                }
+                .btn {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+//==============Contact section ends =================
 // ================media queries================
 @media (max-width: 1200px) {
     .header {
