@@ -447,6 +447,25 @@ section {
 }
 
 //=============== Blog section ends============
+//============== Footer section starts ========
+.footer {
+    text-align: center;
+    background: linear-gradient(transparent, $black);
+    .links {
+        a {
+            margin: 1rem;
+        }
+    }
+    .credit {
+        @include grap-text(2rem);
+        padding-top: 2rem;
+        span {
+            color: $yellow;
+        }
+    }
+}
+
+//============== Footer section ends ========
 // ================media queries================
 @media (max-width: 1200px) {
     .header {
@@ -476,7 +495,7 @@ section {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            top: 99%;
+            top: 100%;
             left: 0;
             right: 0;
             background: $black;

@@ -436,6 +436,23 @@ section {
   padding: 2rem;
 }
 
+.footer {
+  text-align: center;
+  background: linear-gradient(transparent, #000);
+}
+.footer .links a {
+  margin: 1rem;
+}
+.footer .credit {
+  font-size: 2rem;
+  line-height: 2;
+  color: #fff;
+  padding-top: 2rem;
+}
+.footer .credit span {
+  color: #eacf4f;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
@@ -466,7 +483,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    top: 99%;
+    top: 100%;
     left: 0;
     right: 0;
     background: #000;
